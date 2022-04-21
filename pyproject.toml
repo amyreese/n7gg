@@ -44,6 +44,7 @@ watch_paths = ["n7gg"]
 [tool.thx.jobs]
 format = {run="python -m ufmt format {module}", once=true}
 test = "python -m {module}.tests"
+publish = {run="flit publish", once=true}
 server = "python -m n7gg.app"
 
 [tool.thx.jobs.lint]
