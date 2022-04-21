@@ -1,0 +1,55 @@
+[build-system]
+requires = ["flit_core >=3,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "n7gg"
+author = "John Reese"
+author-email = "john@noswap.com"
+description-file = "README.md"
+home-page = "https://github.com/jreese/n7gg"
+requires = [
+    "sanic >= 22",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[tool.flit.sdist]
+exclude = [
+    ".github/",
+]
+
+[tool.attribution]
+name = "n7gg"
+package = "n7gg"
+version_file = true
+signed_tags = true
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.8"
+strict = true
+
+[tool.thx]
+default = ["format", "lint"]
+module = "n7gg"
+python_versions = ["3.10"]
+watch_paths = ["n7gg"]
+
+[tool.thx.jobs]
+format = {run="python -m ufmt format {module}", once=true}
+test = "python -m {module}.tests"
+server = "python -m n7gg.app"
+
+[tool.thx.jobs.lint]
+run = [
+    "python -m mypy --install-types --non-interactive -p {module}",
+    "python -m flake8 {module}",
+    "python -m ufmt check {module}",
+]
+parallel = true

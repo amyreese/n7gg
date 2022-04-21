@@ -1,0 +1,10 @@
+[Unit]
+Description=n7gg url service
+
+[Service]
+User=nobody
+ExecStart=/path/to/n7gg/run.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
