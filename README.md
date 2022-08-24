@@ -22,7 +22,7 @@ Alternately, edit and install `n7gg.service` with systemd to exec `run.sh`.
 License
 -------
 
-n7gg is copyright [John Reese](https://jreese.sh), and licensed under
+n7gg is copyright [Amethyst Reese](https://noswap.com), and licensed under
 the MIT license.  I am providing code in this repository to you under an open
 source license.  This is my personal repository; the license you receive to
 my code is from me and not from my employer. See the `LICENSE` file for details.

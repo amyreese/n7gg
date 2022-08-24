@@ -1,4 +1,4 @@
-# Copyright 2022 John Reese
+# Copyright 2022 Amethyst Reese
 # Licensed under the MIT license
 
 from typing import Optional
@@ -13,7 +13,7 @@ MESSAGES = {
     "index.html": "Simple",
 }
 URLS = {
-    "home": "jreese.sh",
+    "home": "noswap.com",
     "thx": "thx.omnilib.dev",
 }
 

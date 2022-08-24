@@ -1,10 +1,10 @@
-# Copyright 2022 John Reese
+# Copyright 2022 Amethyst Reese
 # Licensed under the MIT license
 
 """
 URL shortener
 """
 
-__author__ = "John Reese"
+__author__ = "Amethyst Reese"
 
 from .__version__ import __version__
